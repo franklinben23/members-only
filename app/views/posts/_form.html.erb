@@ -15,6 +15,7 @@
       <%= form.text_field :title, placeholder: "title for your post" %>
       <%= form.text_area :body, placeholder: "write your post here!" %>
       <%= form.number_field :user_id, value: current_user.id, hidden: true %>
+      <%= link_to 'Edit Profile', edit_user_registration_path %>
   </div>
 
   <div class="actions">
