@@ -1,0 +1,23 @@
+<%= form_with(model: post) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class= "form_cont">
+      <%= form.text_field :title, placeholder: "title for your post" %>
+      <%= form.text_area :body, placeholder: "write your post here!" %>
+      <%= form.number_field :user_id, value: current_user.id, hidden: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
