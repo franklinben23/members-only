@@ -12,6 +12,9 @@
       <p>Post title:<%= post.title%></p>
       <p>Post body:<%= post.body%></p>
       <p>Id:<%= post.id%></p>
+      <% if user_signed_in?%>
+      <p>Author name:<%= post.user.name%></p>
+      <%end%>
       </div>
     <% end %>
   </tbody>
