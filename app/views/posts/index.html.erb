@@ -9,10 +9,9 @@
   <tbody>
     <% @posts.each do |post| %>
       <div>
-      <%= post.title%>
-      <%= post.body%>
-      <%= post.id%>
-      <%#= post.user.name%>
+      <p>Post title:<%= post.title%></p>
+      <p>Post body:<%= post.body%></p>
+      <p>Id:<%= post.id%></p>
       </div>
     <% end %>
   </tbody>
