@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+
+<table>
+  
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <div>
+      <p>Post title:<%= post.title%></p>
+      <p>Post body:<%= post.body%></p>
+      <p>Id:<%= post.id%></p>
+      <%= show_name(post) %>
+      </div>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= show_links %>
