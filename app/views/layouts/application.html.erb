@@ -11,17 +11,7 @@
   </head>
 
   <body>
-    <% if flash[:notice] %>
-    <div class="">
-      <p class="notice"><%= notice %></p>
-    </div>
-  <% end %>
-
-  <% if flash[:alert] %>
-    <div class="">
-      <p class="alert"><%= alert %></p>
-    </div>
-  <% end %>
+   <%= app_flashes %>
 
     <%= yield %>
   </body>

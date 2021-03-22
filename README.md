@@ -10,6 +10,7 @@ In this project, we have created a page that allows user to create and manage ac
 - Clone the repository from GitHub, using the `git clone` command.
 - Create the new application and switch to its folder using `$cd folder name`.
 - In the terminal, type `run bundle` to install the gems
+- run npm install --global yarn
 - Run command 'rails server' to connect to the server.
 - To open the application in the browser, visit http://localhost:3000.
 - To set up and configure your database for the first time, you can use the rails `rails db:create` command.
